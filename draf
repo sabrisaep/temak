@@ -1,0 +1,24 @@
+temak
+Sistem Tempahan Makmal Dan Bilik Kuliah
+
+PENGGUNA
+PUBLIC	•	Login
+•	Status sistem: Belum boleh digunakan jika belum semua pensyarah isi jadual waktu
+JABATAN	•	Senarai makmal dan bilik kuliah
+•	Senarai kursus
+•	Status staf jabatan (mengajar / tidak mengajar)
+•	Tarikh-tarikh minggu kuliah
+PENSYARAH	•	Papar jadual waktu & Isi jadual waktu: kursus  bilik, waktu & tempoh
+•	Lihat kekosongan pada MK tertentu dan tempah
+•	Lihat penggunaan pada MK & bilik tertentu
+•	Maklumkan kekosongan kelas yang sepatutnya anda guna (pada tarikh/masa tertentu: beberapa hari/sehari/satu waktu)
+
+DATABASE
+JABATAN (view)	idjabatan, kodjabatan, namajabatan, kata
+PENSYARAH (view)	idpensyarah, jabatan, nokp, namapensyarah, kata
+BILIK	idbilik, jabatan, kodbilik
+KURSUS	idkursus, jabatan, kodkursus, nama kursus
+AJAR	idajar, pensyarah, kursus
+JADUAL	idjadual, ajar, bilik, hari, masamula, tempoh
+TEMPAH	idtempah, ajar, bilik, tarikh, masamula, tempoh
+
